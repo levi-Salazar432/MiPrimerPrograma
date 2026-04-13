@@ -94,11 +94,31 @@ public class ViewMenuPrincipal{
   
   //---subMenu de texto---
   public static void MenuTexto(Scanner sn){
+    boolean volver = false; 
+    do{
+       System.out.println("---Menu de Texto---");
+       System.out.println("23. Concatenador de Nombre");
+       System.out.println("24. Concatenador de Longitud");
+       System.out.println("25. Inversor de Texto");
+       System.out.println("26. Detector de Vocales");
+       System.out.println("27. Extractor de Iniciales");
+       System.out.println("28. Normalizador a Mayúscula");
+       System.out.println("29. Conversor de Binario");
+       System.out.println("30. Repetidor de palabras");
+       System.out.println("31. Validador de contraseña");
+       System.out.println("32. Generador de correo");
+       System.out.println("33.Volver al menú principal");
+       System.out.print("Seleccione una opción");
+       
+       int opcion = Integer.parseInt(sn.nextLine());
+       if (opcion == 33) volver = true; 
+       else System.out.println("Ejecutando opcion" + opcion);
+       
+    
+       }while (!volver);
       
-  }
-            
-      
-  }
+    }
+}
 
     
 
