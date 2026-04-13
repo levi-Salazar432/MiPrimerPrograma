@@ -12,7 +12,7 @@ public class ViewMenuPrincipal{
     public static void main(String[] args){
     Scanner sn = new Scanner(System.in);
     boolean salir = false; 
-    int opcionMenu =0; 
+    int opcionMenu; 
         do { 
             System.out.println("*********************************");
             System.out.println("Bienvenido Seleccione una opcion:");
@@ -43,7 +43,7 @@ public class ViewMenuPrincipal{
      }
     
         //---submenu de Matematicas---
-    public static void menuMatematicas(sn){
+    public static void MenuMatematicas(Scanner sn){
     boolean volver = false; 
     do{
         System.out.println("Caclculo De Operaciones Matimaticas");
@@ -68,7 +68,7 @@ public class ViewMenuPrincipal{
     }
 
     //---SubMenu de Logico---
-  public static void menuLogico(Scanner sn){
+  public static void MenuLogico(Scanner sn){
       boolean volver = false; 
       do {
           System.out.println("Menu de logica");
@@ -91,6 +91,11 @@ public class ViewMenuPrincipal{
           
       }while (!volver);
     }
+  
+  //---subMenu de texto---
+  public static void MenuTexto(Scanner sn){
+      
+  }
             
       
   }
