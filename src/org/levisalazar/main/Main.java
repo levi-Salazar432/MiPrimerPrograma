@@ -1,5 +1,6 @@
 
-package org.levísalazar.main;
+package org.levisalazar.main;
+
 import org.levisalazar.view.ViewMenuPrincipal;
 /**
  *
@@ -9,10 +10,9 @@ public class Main {
 
     
     public static void main(String[] args) {
-        ViewMenuPrincipal menu = new ViewMenuPrincipal();
         // TODO code application logic here
         System.out.println("Mi primer Programa");
-        menu.mostrarMenu(); 
+        ViewMenuPrincipal.main(args);
     }
     
 }
