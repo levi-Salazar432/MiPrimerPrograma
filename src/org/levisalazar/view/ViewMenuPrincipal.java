@@ -26,9 +26,9 @@ public class ViewMenuPrincipal{
                 opcionMenu = Integer.parseInt(sn.nextLine()); 
                 
                 switch (opcionMenu) {
-                    case 1 ->MenuMatematicas(sn);
-                    case 2 ->MenuLogico(sn);
-                    case 3 ->MenuTexto(sn);
+                    case 1 -> MenuMatematicas(sn);
+                    case 2 -> MenuLogico(sn);
+                    case 3 -> MenuTexto(sn);
                     case 4 -> {
                         System.out.println("Saliendo del sistema!!");
                         salir = true; 
@@ -43,6 +43,7 @@ public class ViewMenuPrincipal{
      }
     
         //---submenu de Matematicas---
+    public static void menuMatematicas(sn){
     boolean volver = false; 
     do{
         System.out.println("Caclculo De Operaciones Matimaticas");
@@ -60,10 +61,39 @@ public class ViewMenuPrincipal{
         System.out.print("Seleccione una operacion");
         
         int opcion = Integer.parseInt(sn.nextLine());
-        if(opcion == 11) volver = true;
+        if (opcion == 11) volver = true;
         else System.out.println("Ejecutando opcion" + opcion);
     
       } while(!volver);
     }
+
+    //---SubMenu de Logico---
+  public static void menuLogico(Scanner sn){
+      boolean volver = false; 
+      do {
+          System.out.println("Menu de logica");
+          System.out.println("12. Verificador de edad");
+          System.out.println("13. Numero par");
+          System.out.println("14. Semáforo");
+          System.out.println("15. Rango Numérico");
+          System.out.println("16. login Simple");
+          System.out.println("17. Mayor de Dos");
+          System.out.println("18. Año Bisiesto");
+          System.out.println("19. Aprobado/Desaprobado");
+          System.out.println("20. Validador de Triangulo");
+          System.out.println("21. Comparador de Cadenas");
+          System.out.println("22. Volver al Menú Principal");
+          System.out.print("Seleccione una opcion: ");
+          
+          int opcion = Integer.parseInt(sn.nextLine());
+          if (opcion == 22) volver = true; 
+          else System.out.println("Ejecutando la opcion" + opcion);
+          
+      }while (!volver);
+    }
+            
+      
+  }
+
     
 
